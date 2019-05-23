@@ -12,26 +12,18 @@ using System.Windows.Forms;
 namespace ArrayForm
 {
     public partial class Form1 : Form
-    {
+
+      {
+        int index = 0;
+        const int size = 10;
+        int[] number = new int[size];
+
         public Form1()
         {
             InitializeComponent();
-            const int size = 10;
-            int[] number = new int[size];
 
-            number[0] = 10;
-            number[2] = 20;
-
-            String message = "" ;
-
-            for(int k = 0; k < 9; k++)
-            {
-                if(number[k] != 0)
-                message = message + "value of index " + k + " is " + number[k].ToString() +"\n";
-            }
-
-            richTextBox1.Text =message;
-            //richTextBox1.Text = number[2].ToString();
+           
+                
         }
 
        
@@ -46,6 +38,72 @@ namespace ArrayForm
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void showButton_Click(object sender, EventArgs e)
+        {
+            const int size = 10;
+            int[] number = new int[size];
+
+            number[0] = 10;
+            //[2] = 20;
+
+            String message = "";
+
+            for (int k = 0; k < 10; k++)
+            {
+                if (number[k] != 0)
+                    message = message + "value of index " + k + " is " + number[k].ToString() + "\n";
+            }
+
+            richTextBox1.Text = message;
+            //richTextBox1.Text = number[2].ToString();
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            
+
+             number[index] = Convert.ToInt32(addTextBox.Text);
+
+             index++;
+            
+
+            String message = "";
+
+            for (int index = 0; index < 10; index++)
+            {
+                if (number[index] != 0)
+                    message = message + "value of index " + index + " is " + number[index].ToString() + "\n";
+            }
+
+            richTextBox1.Text = message;
+            //richTextBox1.Text = number[2].ToString();
+        }
+
+        private void reveresButton_Click(object sender, EventArgs e)
+        {
+          
+
+            
+
+
+            String message = "";
+
+            ////for (int index = 0; index < 10; index++)
+            ////{
+            ////    if (number[index] != 0)
+            ////        message = message + "value of index " + index + " is " + number[index].ToString() + "\n";
+            ////}
+
+            for (int index = 9; index >= 0; index--)
+            {
+                if (number[index] != 0)
+                    message = message + "value of index " + index + " is " + number[index].ToString() + "\n";
+            }
+
+            richTextBox1.Text = message;
+            //richTextBox1.Text = number[2].ToString();
         }
     }
 }
