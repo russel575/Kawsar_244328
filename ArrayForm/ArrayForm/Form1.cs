@@ -50,10 +50,10 @@ namespace ArrayForm
 
             String message = "";
 
-            for (int k = 0; k < 10; k++)
+            for (int i = 0; i < 10; i++)
             {
-                if (number[k] != 0)
-                    message = message + "value of index " + k + " is " + number[k].ToString() + "\n";
+                if (number[i] != 0)
+                    message = message + "value of index " + i + " is " + number[i].ToString() + "\n";
             }
 
             richTextBox1.Text = message;
@@ -69,32 +69,32 @@ namespace ArrayForm
              index++;
             
 
-            String message = "";
+            //String message = "";
 
-            for (int index = 0; index < 10; index++)
-            {
-                if (number[index] != 0)
-                    message = message + "value of index " + index + " is " + number[index].ToString() + "\n";
-            }
+            //for (int index = 0; index < 10; index++)
+            //{
+            //    if (number[index] != 0)
+            //        message = message + "value of index " + index + " is " + number[index].ToString() + "\n";
+            //}
 
-            richTextBox1.Text = message;
+            richTextBox1.Text = Sh("add");
             //richTextBox1.Text = number[2].ToString();
         }
 
         private void reveresButton_Click(object sender, EventArgs e)
         {
-          
 
-            
+
+
 
 
             String message = "";
 
-            ////for (int index = 0; index < 10; index++)
-            ////{
-            ////    if (number[index] != 0)
-            ////        message = message + "value of index " + index + " is " + number[index].ToString() + "\n";
-            ////}
+            //for (int index = 0; index < 10; index++)
+            //{
+            //    if (number[index] != 0)
+            //        message = message + "value of index " + index + " is " + number[index].ToString() + "\n";
+            //}
 
             for (int index = 9; index >= 0; index--)
             {
@@ -104,6 +104,19 @@ namespace ArrayForm
 
             richTextBox1.Text = message;
             //richTextBox1.Text = number[2].ToString();
+        }
+
+        private string Sh(string name)
+        {
+            string message = "";
+
+            for (int index = 0; index < 10; index++)
+            {
+                if (number[index] != 0)
+                    message = message + "value of index " + index + " is " + number[index].ToString() + "\n";
+            }
+            return name + ":" +message;
+           
         }
     }
 }
