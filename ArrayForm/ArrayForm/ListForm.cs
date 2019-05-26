@@ -29,23 +29,46 @@ namespace ArrayForm
             numbers.Add(6);
             numbers.Add(7);
 
+            List<string> names = new List<string>();
+
+            names.Add("kawsar");
+            names.Add("tamim");
+
+            names.Add("babul");
+
+            names.Add("Mijan");
+            names.Add("Shimul");
+            names.Add("Shamim");
+            names.Add("Kalam");
+
+
+
+
+
+
+
             string message = "";
 
                 message = message + "ForEach" + "\n";
+            int index = 0;
 
             foreach (int number in numbers)
             {
-                message = message + number + "\n";
+                message = message + number + names[index] + "\n";
+
+                index ++;
             }
 
             message = message + "ForLoop" + "\n";
 
             for(int i =0; i<numbers.Count; i++)
             {
-                message = message + numbers[i].ToString() + "\n";
+                message = message + numbers[i].ToString( ) + names[i] + "\n";
             }
 
             richTextBox.Text = message;
         }
+
+        
     }
 }

@@ -36,15 +36,15 @@
             // 
             this.richTextBox.Location = new System.Drawing.Point(109, 102);
             this.richTextBox.Name = "richTextBox";
-            this.richTextBox.Size = new System.Drawing.Size(398, 201);
+            this.richTextBox.Size = new System.Drawing.Size(398, 262);
             this.richTextBox.TabIndex = 1;
             this.richTextBox.Text = "";
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(264, 73);
+            this.addButton.Location = new System.Drawing.Point(383, 73);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(75, 23);
+            this.addButton.Size = new System.Drawing.Size(124, 23);
             this.addButton.TabIndex = 2;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
@@ -59,6 +59,7 @@
             this.Controls.Add(this.richTextBox);
             this.Name = "ListForm";
             this.Text = "ListForm";
+
             this.ResumeLayout(false);
 
         }
