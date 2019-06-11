@@ -61,7 +61,7 @@
             this.showRichTextBox.Location = new System.Drawing.Point(113, 229);
             this.showRichTextBox.Name = "showRichTextBox";
             this.showRichTextBox.Size = new System.Drawing.Size(266, 154);
-            this.showRichTextBox.TabIndex = 2;
+            this.showRichTextBox.TabIndex = 5;
             this.showRichTextBox.Text = "";
             // 
             // SaveButton
@@ -69,7 +69,7 @@
             this.SaveButton.Location = new System.Drawing.Point(304, 200);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(75, 23);
-            this.SaveButton.TabIndex = 3;
+            this.SaveButton.TabIndex = 4;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = true;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
